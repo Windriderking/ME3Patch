@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmp\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmp\Icon_15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmp\play.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmp\stop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="金敬姬" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bmp\金敬姬.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGM\bgm1.wma;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bgm2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGM\bgm2.wma;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BIOGame_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\biogame_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BIOGame_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\biogame_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BIOGame_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\biogame_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\config.ini;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com10.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com11.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com12.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com13.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com14.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com15.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com16.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com17.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com18.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com19.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com2.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com3.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com4.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com5.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com6.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com7.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com8.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com9.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_APP01_INT_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_con_app01_int_com.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_APP01_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_app01_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_END_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_con_end_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_END_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_con_end_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_END_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_end_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_GUN01_INT_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_con_gun01_int_com.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_GUN01_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_gun01_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_GUN02_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_con_gun02_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_GUN02_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_con_gun02_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_GUN02_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_gun02_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP1_INT_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_con_mp1_int_com.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP1_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_mp1_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP2_INT_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_con_mp2_int_com.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP2_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_mp2_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP3_INT_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_con_mp3_int_com.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP3_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_mp3_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP4_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_con_mp4_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP4_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_con_mp4_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP4_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_mp4_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP5_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_con_mp5_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP5_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_con_mp5_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_MP5_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_mp5_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack001_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_exp_pack001_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack001_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_exp_pack001_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack001_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_exp_pack001_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack002_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_exp_pack002_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack002_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_exp_pack002_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack002_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_exp_pack002_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_Base_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_exp_pack003_base_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_Base_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_exp_pack003_base_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_Base_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_exp_pack003_base_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_exp_pack003_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_exp_pack003_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_EXP_Pack003_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_exp_pack003_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_HEN_PR_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_hen_pr_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_HEN_PR_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_hen_pr_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_HEN_PR_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_hen_pr_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che10.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che11.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che12.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che13.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che15.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che16.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che17.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che18.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che19.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che6.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che7.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn10.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn11.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn12.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn13.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn15.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn16.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn17.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn18.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn19.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn7.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_COM6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_shared_int_com6.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_COM8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_shared_int_com8.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_COM9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\mp\dlc_shared_int_com9.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng10.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng11.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng12.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng13.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng15.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng16.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng17.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng18.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng19.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng6.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng7.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng8.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng9.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch01_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_upd_patch01_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch01_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_upd_patch01_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch01_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_upd_patch01_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch02_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_upd_patch02_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch02_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_upd_patch02_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_UPD_Patch02_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_upd_patch02_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MassEffect3Config_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\masseffect3config_eng.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MassEffect3Config_ENG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\masseffect3config_eng1.xml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SFXGUI_Fonts_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\fonts\sfxgui_fonts_com.pcc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SFXGUI_Fonts_DLC_COM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\fonts\sfxgui_fonts_dlc_com.pcc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SFXGUI_Fonts_DLC_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\sfxgui_fonts_dlc_eng.pcc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SFXGUI_Fonts_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\sfxgui_fonts_eng.pcc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_DH1_INT_CHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_con_dh1_int_che.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_DH1_INT_CHN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_con_dh1_int_chn.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_CON_DH1_INT_ENG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_con_dh1_int_eng.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHE20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\che\dlc_shared_int_che20.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_CHN20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chn\dlc_shared_int_chn20.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DLC_Shared_INT_ENG20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eng\dlc_shared_int_eng20.tlk;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Data_COM20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\data\data_com20.pat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

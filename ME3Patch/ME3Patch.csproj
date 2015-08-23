@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD4B94F8-1363-4949-8EBC-55A31566AEEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ME3Patch</RootNamespace>
+    <AssemblyName>ME3Patch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\bmp\Icon_15.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adv.Designer.cs">
+      <DependentUpon>Adv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\DLC\DLCBase\CompressionScheme.cs" />
+    <Compile Include="Tools\DLC\DLCBase\DLCBase.cs" />
+    <Compile Include="Tools\DLC\DLCBase\SortedKeyedCollection.cs" />
+    <Compile Include="Tools\DLC\DLCBase\StreamHelpers.cs" />
+    <Compile Include="Tools\DLC\DLCEditor\DLCEditor.cs" />
+    <Compile Include="Tools\Gibbed.IO\ByteBufferReader.cs" />
+    <Compile Include="Tools\Gibbed.IO\Endian.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\Align.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\BigEndian.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\LittleEndian.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\RotateLeft.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\RotateRight.cs" />
+    <Compile Include="Tools\Gibbed.IO\NumberHelpers\Swap.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Aligned.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Boolean.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Enum.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Guid.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\F32.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\F64.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\S08.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\S16.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\S32.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\S64.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\U08.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\U16.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\U32.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Numbers\U64.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Strings\Default.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Strings\Internal.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Strings\Supplied.cs" />
+    <Compile Include="Tools\Gibbed.IO\StreamHelpers\Structure.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\BitArrayWrapper.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\Crc32.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\FileNameHash.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\SFXArchiveFile.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\SFXArchive\Entry.cs" />
+    <Compile Include="Tools\Gibbed.MassEffect3.FileFormats\StringHelpers.cs" />
+    <Compile Include="Tools\Gibbed.ProjectData\HashList.cs" />
+    <Compile Include="Tools\Gibbed.ProjectData\Manager.cs" />
+    <Compile Include="Tools\Gibbed.ProjectData\Project.cs" />
+    <Compile Include="Tools\INI.cs" />
+    <Compile Include="Tools\NDesk.Options\Options.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Common\CommandLineParser.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Common\CRC.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Common\InBuffer.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Common\OutBuffer.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Tools\SevenZip\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Tools\SevenZip\7zip\ICoder.cs" />
+    <Compile Include="Tools\SevenZip\SevenZipHelper.cs" />
+    <Compile Include="Tools\VPatch\checksum.cs" />
+    <Compile Include="Tools\VPatch\DoPatch.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adv.resx">
+      <DependentUpon>Adv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\CHE\BIOGame_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_CON_DH1_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_CON_END_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_CON_GUN02_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_CON_MP4_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_CON_MP5_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_EXP_Pack001_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_EXP_Pack002_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_EXP_Pack003_Base_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_EXP_Pack003_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_HEN_PR_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE10.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE11.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE12.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE13.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE15.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE16.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE17.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE18.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE19.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE20.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE6.tlk" />
+    <None Include="Resources\CHE\DLC_Shared_INT_CHE7.tlk" />
+    <None Include="Resources\CHE\DLC_UPD_Patch01_INT_CHE.tlk" />
+    <None Include="Resources\CHE\DLC_UPD_Patch02_INT_CHE.tlk" />
+    <None Include="Resources\CHN\BIOGame_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_CON_DH1_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_CON_END_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_CON_GUN02_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_CON_MP4_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_CON_MP5_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_EXP_Pack001_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_EXP_Pack002_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_EXP_Pack003_Base_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_EXP_Pack003_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_HEN_PR_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN10.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN11.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN12.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN13.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN15.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN16.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN17.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN18.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN19.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN20.tlk" />
+    <None Include="Resources\CHN\DLC_Shared_INT_CHN7.tlk" />
+    <None Include="Resources\CHN\DLC_UPD_Patch01_INT_CHN.tlk" />
+    <None Include="Resources\CHN\DLC_UPD_Patch02_INT_CHN.tlk" />
+    <None Include="Resources\Common\Data\Data_COM10.pat" />
+    <None Include="Resources\Common\Data\Data_COM11.pat" />
+    <None Include="Resources\Common\Data\Data_COM12.pat" />
+    <None Include="Resources\Common\Data\Data_COM13.pat" />
+    <None Include="Resources\Common\Data\Data_COM14.pat" />
+    <None Include="Resources\Common\Data\Data_COM15.pat" />
+    <None Include="Resources\Common\Data\Data_COM16.pat" />
+    <None Include="Resources\Common\Data\Data_COM17.pat" />
+    <None Include="Resources\Common\Data\Data_COM18.pat" />
+    <None Include="Resources\Common\Data\Data_COM19.pat" />
+    <None Include="Resources\Common\Data\Data_COM2.pat" />
+    <None Include="Resources\Common\Data\Data_COM20.pat" />
+    <None Include="Resources\Common\Data\Data_COM3.pat" />
+    <None Include="Resources\Common\Data\Data_COM4.pat" />
+    <None Include="Resources\Common\Data\Data_COM5.pat" />
+    <None Include="Resources\Common\Data\Data_COM6.pat" />
+    <None Include="Resources\Common\Data\Data_COM7.pat" />
+    <None Include="Resources\Common\Data\Data_COM8.pat" />
+    <None Include="Resources\Common\Data\Data_COM9.pat" />
+    <None Include="Resources\Common\Fonts\SFXGUI_Fonts_COM.pcc" />
+    <None Include="Resources\Common\Fonts\SFXGUI_Fonts_DLC_COM.pcc" />
+    <None Include="Resources\Common\MP\DLC_CON_APP01_INT_COM.tlk" />
+    <None Include="Resources\Common\MP\DLC_CON_GUN01_INT_COM.tlk" />
+    <None Include="Resources\Common\MP\DLC_CON_MP1_INT_COM.tlk" />
+    <None Include="Resources\Common\MP\DLC_CON_MP2_INT_COM.tlk" />
+    <None Include="Resources\Common\MP\DLC_CON_MP3_INT_COM.tlk" />
+    <None Include="Resources\Common\MP\DLC_Shared_INT_COM6.tlk" />
+    <None Include="Resources\Common\MP\DLC_Shared_INT_COM8.tlk" />
+    <None Include="Resources\Common\MP\DLC_Shared_INT_COM9.tlk" />
+    <None Include="Resources\config.ini" />
+    <None Include="Resources\ENG\BIOGame_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_APP01_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_DH1_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_END_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_GUN01_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_GUN02_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_MP1_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_MP2_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_MP3_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_MP4_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_CON_MP5_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_EXP_Pack001_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_EXP_Pack002_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_EXP_Pack003_Base_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_EXP_Pack003_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_HEN_PR_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG10.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG11.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG12.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG13.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG15.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG16.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG17.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG18.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG19.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG20.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG6.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG7.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG8.tlk" />
+    <None Include="Resources\ENG\DLC_Shared_INT_ENG9.tlk" />
+    <None Include="Resources\ENG\DLC_UPD_Patch01_INT_ENG.tlk" />
+    <None Include="Resources\ENG\DLC_UPD_Patch02_INT_ENG.tlk" />
+    <None Include="Resources\ENG\MassEffect3Config_ENG.exe" />
+    <None Include="Resources\ENG\MassEffect3Config_ENG1.xml" />
+    <None Include="Resources\ENG\SFXGUI_Fonts_DLC_ENG.pcc" />
+    <None Include="Resources\ENG\SFXGUI_Fonts_ENG.pcc" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp\Icon_15.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp\play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp\stop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp\金敬姬.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGM\bgm1.wma" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGM\bgm2.wma" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
